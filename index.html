@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EMLMLP - École Modèle des Langues Modernes et Leçons Particulières à Paris. Cours de français, anglais, arabe et cours particuliers de 3 à 16 ans.">
+  <title>EMLMLP | Langues modernes & cours particuliers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#accueil" aria-label="EMLMLP - Accueil">
+      <span class="brand-mark">EML</span>
+      <span><strong>EMLMLP</strong><small>École Modèle des Langues Modernes<br>et Leçons Particulières</small></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+    <nav class="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#cours">Nos cours</a>
+      <a href="#ages">Nos élèves</a>
+      <a href="#pedagogie">Pédagogie</a>
+      <a href="#inscription">Inscription</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-small" href="#inscription">Inscrire mon enfant</a>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">EMLMLP · PARIS</p>
+        <h1>Apprendre les langues,<br><span>progresser, réussir.</span></h1>
+        <p class="lead">Des cours de français, d’anglais et d’arabe, ainsi que des cours particuliers adaptés aux enfants et adolescents de 3 à 16 ans.</p>
+        <div class="actions">
+          <a class="btn" href="#cours">Découvrir nos cours</a>
+          <a class="btn btn-outline" href="#inscription">Inscrire mon enfant</a>
+        </div>
+        <div class="language-pills">
+          <span>🇫🇷 Français</span><span>🇬🇧 Anglais</span><span>🇸🇦 Arabe</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="circle">3–16<br><small>ans</small></div>
+        <div class="book book-1"></div><div class="book book-2"></div><div class="book book-3"></div>
+        <div class="paris">PARIS</div>
+      </div>
+    </section>
+
+    <section id="cours" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Nos enseignements</p>
+        <h2>Des cours pour apprendre avec confiance</h2>
+        <p>Une approche adaptée à l’âge, au niveau et aux besoins de chaque élève.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon">🇫🇷</div><h3>Français</h3><p>Compréhension, expression orale et écrite, vocabulaire et bases grammaticales.</p><a href="#inscription">En savoir plus →</a></article>
+        <article class="card"><div class="icon">🇬🇧</div><h3>Anglais</h3><p>Apprentissage progressif, interactif et adapté à chaque âge.</p><a href="#inscription">En savoir plus →</a></article>
+        <article class="card"><div class="icon">🇸🇦</div><h3>Arabe</h3><p>Découverte et développement de la maîtrise de la langue arabe.</p><a href="#inscription">En savoir plus →</a></article>
+        <article class="card"><div class="icon">📚</div><h3>Cours particuliers</h3><p>Un accompagnement personnalisé selon les difficultés et les objectifs de l’élève.</p><a href="#inscription">En savoir plus →</a></article>
+      </div>
+    </section>
+
+    <section id="ages" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Nos élèves</p>
+        <h2>Un accompagnement à chaque âge</h2>
+      </div>
+      <div class="age-grid">
+        <article><strong>3–5 ans</strong><h3>Éveil et découverte</h3><p>Jeux, activités ludiques et premiers mots.</p></article>
+        <article><strong>6–10 ans</strong><h3>Apprentissage et consolidation</h3><p>Bases solides, vocabulaire et méthodes actives.</p></article>
+        <article><strong>11–13 ans</strong><h3>Perfectionnement et autonomie</h3><p>Approfondissement, expression et organisation.</p></article>
+        <article><strong>14–16 ans</strong><h3>Renforcement scolaire</h3><p>Maîtrise des langues et accompagnement des objectifs scolaires.</p></article>
+      </div>
+    </section>
+
+    <section id="pedagogie" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Notre pédagogie</p>
+        <h2>Une méthode bienveillante et efficace</h2>
+      </div>
+      <div class="values">
+        <div><span>👥</span><h3>Adaptée</h3><p>À l’âge de l’enfant.</p></div>
+        <div><span>🎯</span><h3>Personnalisée</h3><p>Selon ses besoins.</p></div>
+        <div><span>📈</span><h3>Progressive</h3><p>Pour des progrès durables.</p></div>
+        <div><span>⭐</span><h3>Ludique</h3><p>Pour apprendre avec plaisir.</p></div>
+      </div>
+    </section>
+
+    <section id="inscription" class="section enrollment">
+      <div>
+        <p class="eyebrow">Inscription</p>
+        <h2>Parlons du projet de votre enfant.</h2>
+        <p>Remplissez le formulaire et nous pourrons échanger sur le niveau, les objectifs et le cours le plus adapté.</p>
+      </div>
+      <form class="form" id="registrationForm">
+        <label>Nom du parent<input name="parent" required></label>
+        <label>Nom de l’enfant<input name="child" required></label>
+        <label>Âge de l’enfant<input name="age" type="number" min="3" max="16" required></label>
+        <label>Choix du cours
+          <select name="course" required>
+            <option value="">Sélectionner</option>
+            <option>Français</option><option>Anglais</option><option>Arabe</option><option>Cours particuliers</option>
+          </select>
+        </label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Téléphone<input name="phone" type="tel"></label>
+        <label class="full">Message<textarea name="message" rows="4" placeholder="Objectifs, disponibilités, questions..."></textarea></label>
+        <button class="btn full" type="submit">Envoyer ma demande</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div><strong>EMLMLP</strong><p>École Modèle des Langues Modernes et Leçons Particulières</p></div>
+    <div><h3>Paris</h3><p>France</p><p>📞 À compléter</p><p>✉️ À compléter</p></div>
+    <div><h3>Navigation</h3><a href="#cours">Cours</a><a href="#ages">Nos élèves</a><a href="#inscription">Inscription</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
